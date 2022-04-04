@@ -1041,6 +1041,12 @@
       "url": "https://json.schemastore.org/debugsettings.json"
     },
     {
+      "name": "Deno",
+      "description": "A JSON representation of a Deno configuration file.",
+      "fileMatch": ["deno.json", "deno.jsonc"],
+      "url": "https://deno.land/x/deno/cli/schemas/config-file.v1.json"
+    },
+    {
       "name": "dependabot.json",
       "description": "A JSON schema for the Dependabot config.yml files",
       "fileMatch": [
@@ -1895,6 +1901,14 @@
         "*.k3d.yml"
       ],
       "url": "https://raw.githubusercontent.com/rancher/k3d/main/pkg/config/config.versions.schema.json"
+    },
+    {
+      "name": "service.datadog.yaml",
+      "description": "Datadog service catalog definition file",
+      "fileMatch": [
+        "service.datadog.yaml"
+      ],
+      "url": "https://raw.githubusercontent.com/DataDog/schema/main/service-catalog/version.schema.json"
     },
     {
       "name": "Ory Keto configuration",
