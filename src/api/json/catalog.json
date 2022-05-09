@@ -145,7 +145,7 @@
     {
       "name": "Ansible Tasks File",
       "description": "Ansible tasks file",
-      "url": "https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible-tasks.json",
+      "url": "https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible.json#/definitions/tasks",
       "fileMatch": [
         "**/tasks/*.yml",
         "**/tasks/*.yaml",
@@ -156,7 +156,7 @@
     {
       "name": "Ansible Playbook",
       "description": "Ansible playbook files",
-      "url": "https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible-playbook.json",
+      "url": "https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible.json#/definitions/playbook",
       "fileMatch": [
         "playbook.yml",
         "playbook.yaml",
@@ -195,7 +195,7 @@
     {
       "name": "Ansible Navigator Configuration",
       "description": "Ansible Navigator Configuration",
-      "url": "https://raw.githubusercontent.com/ansible-community/schemas/main/f/ansible-navigator.json",
+      "url": "https://raw.githubusercontent.com/ansible/ansible-navigator/main/src/ansible_navigator/data/ansible-navigator.json",
       "fileMatch": [
         ".ansible-navigator.json",
         ".ansible-navigator.yaml",
@@ -263,7 +263,7 @@
         "*.architect.yml",
         "*.architect.yaml"
       ],
-      "url": "https://raw.githubusercontent.com/architect-team/architect-cli/master/src/dependency-manager/schema/architect.schema.json"
+      "url": "https://raw.githubusercontent.com/architect-team/architect-cli/main/src/dependency-manager/schema/architect.schema.json"
     },
     {
       "name": "arc.json",
@@ -287,6 +287,34 @@
         "artifacthub-repo.yml"
       ],
       "url": "https://json.schemastore.org/artifacthub-repo.json"
+    },
+    {
+      "name": "AssemblyScript",
+      "description": "AssemblyScript is TypeScript-like language that is compiled to WebAssembly (wasm).",
+      "fileMatch": [
+        "asconfig.json"
+      ],
+      "url": "https://json.schemastore.org/asconfig-schema.json"
+    },
+    {
+      "name": "asyncapi.json",
+      "description": "A JSON schema for AsyncAPI documentation files",
+      "fileMatch": [
+        "asyncapi.json",
+        "asyncapi.yml",
+        "asyncapi.yaml"
+      ],
+      "url": "https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/2.4.0.json",
+      "versions": {
+        "1.0.0": "https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/1.0.0.json",
+        "1.1.0": "https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/1.1.0.json",
+        "1.2.0": "https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/1.2.0.json",
+        "2.0.0": "https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/2.0.0.json",
+        "2.1.0": "https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/2.1.0.json",
+        "2.2.0": "https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/2.2.0.json",
+        "2.3.0": "https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/2.3.0.json",
+        "2.4.0": "https://raw.githubusercontent.com/asyncapi/spec-json-schemas/master/schemas/2.4.0.json"
+      }
     },
     {
       "name": "Avro Avsc",
@@ -873,6 +901,14 @@
       "url": "https://json.schemastore.org/workflows.json"
     },
     {
+      "name": "AWS CDK cdk.json",
+      "description": "Schema for AWS CDK context files",
+      "url": "https://json.schemastore.org/cdk.json",
+      "fileMatch": [
+        "cdk.json"
+      ]
+    },
+    {
       "name": "AWS CloudFormation",
       "description": "AWS CloudFormation provides a common language for you to describe and provision all the infrastructure resources in your cloud environment.",
       "fileMatch": [
@@ -1043,8 +1079,11 @@
     {
       "name": "Deno",
       "description": "A JSON representation of a Deno configuration file.",
-      "fileMatch": ["deno.json", "deno.jsonc"],
-      "url": "https://deno.land/x/deno/cli/schemas/config-file.v1.json"
+      "fileMatch": [
+        "deno.json",
+        "deno.jsonc"
+      ],
+      "url": "https://raw.githubusercontent.com/denoland/deno/main/cli/schemas/config-file.v1.json"
     },
     {
       "name": "dependabot.json",
@@ -1717,6 +1756,14 @@
       "url": "https://raw.githubusercontent.com/ory/hydra/master/.schema/version.schema.json"
     },
     {
+      "name": "ide.host.json",
+      "description": "JSON schema for IDE template host file",
+      "fileMatch": [
+        "ide.host.json"
+      ],
+      "url": "https://json.schemastore.org/ide.host.json"
+    },
+    {
       "name": "imageoptimizer.json",
       "description": "Schema for imageoptimizer.json files",
       "fileMatch": [
@@ -1750,7 +1797,7 @@
         "jsonCustom.json",
         "jsonTab.json"
       ],
-      "url": "https://raw.githubusercontent.com/ioBroker/adapter-react/master/schemas/jsonConfig.json"
+      "url": "https://raw.githubusercontent.com/ioBroker/adapter-react-v5/main/schemas/jsonConfig.json"
     },
     {
       "name": "ioBroker Package manifest",
@@ -1978,6 +2025,14 @@
         "license-report-config.json"
       ],
       "url": "https://json.schemastore.org/license-report-config.json"
+    },
+    {
+      "name": "linkinator.config.json",
+      "description": "Linkinator config file",
+      "fileMatch": [
+        "linkinator.config.json"
+      ],
+      "url": "https://json.schemastore.org/linkinator-config.json"
     },
     {
       "name": "local.settings.json",
@@ -3864,11 +3919,12 @@
         "*gradle-enterprise.yml",
         "*gradle-enterprise.yaml"
       ],
-      "url": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-3.json",
+      "url": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-4.json",
       "versions": {
         "1.0": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-1.json",
         "2.0": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-2.json",
-        "3.0": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-3.json"
+        "3.0": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-3.json",
+        "4.0": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-4.json"
       }
     },
     {
@@ -4082,12 +4138,18 @@
         "v2beta19": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/master/docs/content/en/schemas/v2beta19.json",
         "v2beta20": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/master/docs/content/en/schemas/v2beta20.json",
         "v2beta21": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/master/docs/content/en/schemas/v2beta21.json",
-        "v2beta22": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/master/docs/content/en/schemas/v2beta22.json"
+        "v2beta22": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/master/docs/content/en/schemas/v2beta22.json",
+        "v2beta23": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/master/docs/content/en/schemas/v2beta23.json",
+        "v2beta24": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/master/docs/content/en/schemas/v2beta24.json",
+        "v2beta25": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/master/docs/content/en/schemas/v2beta25.json",
+        "v2beta26": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/master/docs/content/en/schemas/v2beta26.json",
+        "v2beta27": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/master/docs/content/en/schemas/v2beta27.json",
+        "v2beta28": "https://raw.githubusercontent.com/GoogleContainerTools/skaffold/master/docs/content/en/schemas/v2beta28.json"
       }
     },
     {
-      "name": "markdownlint.json",
-      "description": "Markdownlint configuration file",
+      "name": "Markdownlint",
+      "description": "Markdownlint config file schema",
       "fileMatch": [
         ".markdownlintrc",
         ".markdownlint.json",
@@ -4095,7 +4157,7 @@
         ".markdownlint.yaml",
         ".markdownlint.yml"
       ],
-      "url": "https://json.schemastore.org/markdownlint.json"
+      "url": "https://raw.githubusercontent.com/DavidAnson/markdownlint/main/schema/markdownlint-config-schema.json"
     },
     {
       "name": "SauceCTL Configuration",
@@ -4236,6 +4298,78 @@
         "conf.yaml"
       ],
       "url": "https://json.schemastore.org/cheatsheets.json"
+    },
+    {
+      "name": "deployed-cli",
+      "description": "JSON schema for the deployed cli config file. \n\nSee also: https://hyhello.github.io/deployed\n\n",
+      "fileMatch": [
+        ".deployedrc",
+        ".deployed.json",
+        ".deployed.yaml",
+        ".deployed.yml"
+      ],
+      "url": "https://json.schemastore.org/deployed.json"
+    },
+    {
+      "name": "Xstate Machine Schema",
+      "description": "Schema for making statecharts",
+      "fileMatch": [],
+      "url": "https://raw.githubusercontent.com/statelyai/xstate/main/packages/core/src/machine.schema.json"
+    },
+    {
+      "name": "Butane config schema",
+      "description": "Schema to validate butane files for Fedora CoreOS",
+      "fileMatch": [
+        "*.bu"
+      ],
+      "url": "https://raw.githubusercontent.com/Relativ-IT/Butane-Schemas/Release/Butane-Schema.json"
+    },
+    {
+      "name": "Updatecli",
+      "description": "Schema for Updatecli manifest",
+      "fileMatch": [
+        "**/updatecli.d/**/*.yaml",
+        "**/updatecli.d/**/*.yml",
+        "updatecli.yml",
+        "updatecli.yaml"
+      ],
+      "url": "https://www.updatecli.io/schema/latest/config.json"
+    },
+    {
+      "name": "GeoJSON.json latest",
+      "description": "GeoJSON format for representing geographic data. Newest version from GeoJSON org.",
+      "url": "https://geojson.org/schema/GeoJSON.json"
+    },
+    {
+      "name": ".clang-format",
+      "description": "yaml schema for clang-format config",
+      "fileMatch": [
+        ".clang-format"
+      ],
+      "url": "https://json.schemastore.org/clang-format.json"
+    },
+    {
+      "name": "Estuary Flow Catalog Schema",
+      "description": "JSON schema for Flow catalog files. See: https://github.com/estuary/flow",
+      "fileMatch": [
+        "flow.yaml",
+        "*.flow.yaml",
+        "flow.json",
+        "*.flow.json"
+      ],
+      "url": "https://raw.githubusercontent.com/estuary/flow/master/flow.schema.json"
+    },
+    {
+      "name": "V2Ray",
+      "description": "JSON schema for V2Ray jsonv4/jsonv5 configuration format",
+      "fileMatch": [
+        "**/v2ray/*.json"
+      ],
+      "url": "https://raw.githubusercontent.com/EHfive/v2ray-jsonschema/main/v4-config.schema.json",
+      "versions": {
+        "jsonv4": "https://raw.githubusercontent.com/EHfive/v2ray-jsonschema/main/v4-config.schema.json",
+        "jsonv5-preview": "https://raw.githubusercontent.com/EHfive/v2ray-jsonschema/main/v5-config.schema.json"
+      }
     }
   ]
 }

@@ -122,7 +122,6 @@
     "dotnetcli.host.json",
     "drone.json",
     "electron-builder.json",
-    "eslintrc.json",
     "esmrc.json",
     "expo-37.0.0.json",
     "expo-38.0.0.json",
@@ -170,7 +169,6 @@
     "lgtm.json",
     "libman.json",
     "lintstagedrc.schema.json",
-    "markdownlint.json",
     "minecraft-advancement.json",
     "minecraft-biome.json",
     "minecraft-dimension.json",
@@ -255,14 +253,16 @@
     "winget-pkgs-singleton-0.1.json",
     "workflows.json",
     "xs-app.json",
-    "yamllint.json"
+    "yamllint.json",
+    "deployed.json"
   ],
   "skiptest": [
     "---> ninjs-1.0.json use 'draft-03' is not supported by validator<---",
     "ninjs-1.0.json",
     "---> below this line are schema that $ref external urls <---",
     "block.json",
-    "theme-v1.json"
+    "theme-v1.json",
+    "markdownlint.json"
   ],
   "missingcatalogurl": [
     "---> below this line are schema, that are included from other schema<---",
@@ -696,8 +696,12 @@
     },
     {
       "package.json": {
+        "externalSchema": [
+          "eslintrc.json"
+        ],
         "unknownKeywords": [
-          "tsType"
+          "tsType",
+          "x-intellij-language-injection"
         ]
       }
     },
@@ -751,6 +755,13 @@
       "unist.json": {
         "unknownKeywords": [
           "markdownDescription"
+        ]
+      }
+    },
+    {
+      "vs-2017.3.host.json": {
+        "externalSchema": [
+          "ide.host.json"
         ]
       }
     },
